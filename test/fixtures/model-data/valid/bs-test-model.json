@@ -1,0 +1,29 @@
+{
+    "duckSiblings": [
+        {
+            "eatsBugs": true,
+            "colors": "red",
+            "children": []
+        },
+        {
+            "eatsBugs": false,
+            "colors": "blue",
+            "children": [
+                {
+                    "eatsBugs": false,
+                    "colors": "blue",
+                    "children": [
+                        {
+                            "eatsBugs": false,
+                            "colors": "green"
+                        },
+                        {
+                            "eatsBugs": false,
+                            "colors": "green"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

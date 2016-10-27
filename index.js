@@ -1,1 +1,1 @@
-/// the beginning
+module.exports = require('./lib/frankenstop-model');
