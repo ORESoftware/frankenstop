@@ -13,6 +13,19 @@ function Duck(obj, isPreValidate) {
 
 }
 
+
+Duck.fromExisting = function _fromExisting(obj){
+
+     if(!obj.duckId){
+         throw new Error('Duck has no duckId');
+     }
+     else{
+         return new Duck(obj);
+     }
+
+};
+
+
 Object.setPrototypeOf(Duck.prototype, Frankenstop.prototype);
 
 
