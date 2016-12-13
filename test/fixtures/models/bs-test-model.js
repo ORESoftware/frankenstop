@@ -1,17 +1,17 @@
 const util = require('util');
-const Frankenstop = require('../../../lib/frankenstop-model');
+const F = require('../../../lib/frankenstop-model');
 
 
-function Duck(obj, isPreValidate) {
+const Duck = F.bestow(function (obj, isPreValidate) {
 
     this.duckId = '???';
     this.duckTypeId = obj.duckTypeId || '???';
     this.duckSiblings = obj.duckSiblings;
 
-    //this may throw an error, for purposes of failing-fast for devs
-    Frankenstop.apply(this, [isPreValidate]);
-
-}
+    //this may throw an error, for purposes of fa
+    // iling-fast for devs
+    F.apply(this, [isPreValidate]);
+});
 
 
 Duck.fromExisting = function _fromExisting(obj){
@@ -25,8 +25,7 @@ Duck.fromExisting = function _fromExisting(obj){
 
 };
 
-
-Object.setPrototypeOf(Duck.prototype, Frankenstop.prototype);
+// do the inheritance thing
 
 
 Duck.getSchema = function getDuckSchema() {
@@ -121,5 +120,5 @@ Duck.prototype.toJSON = function toJSON() {
 };
 
 
-Frankenstop.validateFrankenstopSchema(Duck);
+F.validateFrankenstopSchema(Duck);
 module.exports = Duck;
