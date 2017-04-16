@@ -1,8 +1,8 @@
 const suman = require('suman');
-const Test = suman.init(module, {});
+const Test = suman.init(module);
 
 
-Test.describe(__filename, {}, function (fs, path, assert) {
+Test.create(function (fs, path, assert) {
 
     const Duck = require('../fixtures/models/bs-test-model');
 

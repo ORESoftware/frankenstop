@@ -33,7 +33,6 @@ Duck.getSchema = function getDuckSchema() {
     return Object.freeze({
 
         prevalidateAllFields: true,
-
         allowExtraneousProperties: false,
 
         properties: {
