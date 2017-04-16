@@ -1,0 +1,5 @@
+
+
+Given an example schema item, generate the schema from that.
+
+Use 'any' to mean boolean, integer, object, etc.
