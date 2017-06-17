@@ -2,11 +2,11 @@ const suman = require('suman');
 const Test = suman.init(module);
 
 
-Test.create(function (fs, path, assert) {
+Test.create(function (fs, path, assert, describe) {
 
     const Duck = require('../fixtures/models/bs-test-model');
 
-    this.describe('test valid json', function () {
+    describe('test valid json', function () {
 
         const dir = path.resolve(__dirname + '/../fixtures/model-data/valid');
 
@@ -35,7 +35,7 @@ Test.create(function (fs, path, assert) {
     });
 
 
-    this.describe.skip('test in-valid json', function () {
+    describe.skip('test in-valid json', function () {
 
 
         const dir = path.resolve(__dirname, 'fixtures/bs-test-model-data/invalid');

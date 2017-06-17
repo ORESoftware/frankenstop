@@ -18,6 +18,6 @@
     "lodash": "^4.16.4"
   },
   "devDependencies": {
-    "suman": "github:sumanjs/suman#dev"
+    "suman": "github:sumanjs/suman#rebase_branch"
   }
 }
