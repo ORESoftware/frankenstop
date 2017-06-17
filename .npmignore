@@ -1,0 +1,6 @@
+test
+*.sh
+*.md
+*.json
+*.lock
+*.txt

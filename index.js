@@ -1,1 +1,1 @@
-module.exports = require('./lib/frankenstop-model');
+exports.default = require('./lib/frankenstop-model');
