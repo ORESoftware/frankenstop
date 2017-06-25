@@ -1,6 +1,6 @@
 {
   "name": "frankenstop",
-  "version": "0.0.1006",
+  "version": "0.0.1007",
   "description": "Prevent Frankensteinian JS objects from making their way into your no-SQL database, or passing through your code.",
   "main": "index.js",
   "scripts": {
