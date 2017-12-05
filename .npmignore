@@ -5,6 +5,8 @@ test
 .idea
 coverage
 .vscode
+.nyc_output
+
 
 ### matching
 *.sh
@@ -13,6 +15,8 @@ coverage
 *.json
 *.txt
 *.yml
+*.log
+
 
 ### files
 .editorconfig
