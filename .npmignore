@@ -1,23 +1,22 @@
+
 ### folders
 node_modules
 test
 .idea
 coverage
+.vscode
 
 ### matching
 *.sh
-*ts
+*.ts
 *.md
 *.json
-*.lock
 *.txt
+*.yml
 
 ### files
-package-lock.json
-yarn.lock
 .editorconfig
 .babelrc
-.travis.yml
 
 ### negation
 !*.d.ts
